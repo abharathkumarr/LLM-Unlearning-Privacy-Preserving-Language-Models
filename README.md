@@ -7,12 +7,25 @@ This project implements and evaluates multiple methods for machine unlearning in
 
 LLMs can unintentionally memorize sensitive user data. This project aims to make models "forget" certain individuals while retaining overall knowledge, supporting goals like GDPR compliance and the Right to be Forgotten.
 
-## Dataset: RETURN
+## Dataset
 
-- 2,492 real-world personas with 20 QA pairs each.
-- Subsets:
-  - **Forget Set**: Targeted for unlearning.
-  - **Retain Set**: Knowledge to be preserved.
+We used the **RETURN Dataset**:
+- **RETURN** = Real-world pErsonal daTa UnleaRNing
+- Contains 2,492 real-world Wikipedia identities
+- Each entry contains 20 QA pairs generated via GPT-4
+- Each QA sample averages ~1K tokens
+
+### Dataset Files Used
+
+- `forget_train.jsonl`: Original forget set (gold answers)
+- `retain_train.jsonl`: Original retain set (gold answers)
+- `forget_eval.jsonl`: Evaluation forget set
+- `retain_eval.jsonl`: Evaluation retain set
+- `forget_train_augmented.jsonl`: Forget set with refusal templates
+- `retain_train_augmented.jsonl`: Retain set with name-swapped factual data (CDA)
+- `refuse.jsonl`: Templates like “Sorry, I can’t answer about [NAME].”
+- `idontknow.jsonl`: Generic templates like “I don’t know.”
+
 
 ##  Methods Implemented
 
@@ -49,7 +62,6 @@ LLMs can unintentionally memorize sensitive user data. This project aims to make
 - Metrics:
   - **Forget Accuracy**: Lower is better (more forgetting)
   - **Retain Accuracy**: Higher is better (more remembering)
-
 
 ## 📎 References
 
