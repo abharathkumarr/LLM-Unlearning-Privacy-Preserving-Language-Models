@@ -63,14 +63,13 @@ We used the **RETURN Dataset**:
   - **Forget Accuracy**: Measures model's ability to forget DF answers
   - **Retain Accuracy**: Measures model's ability to retain DR knowledge
 
-## 📎 References
+## References
 
-references = """
 [1] Yao, Y., Xu, X. and Liu, Y. (2023). Large Language Model Unlearning. [arXiv:2310.10683](https://arxiv.org/abs/2310.10683)  
 [2] Liu, Z., Zhu, T., Tan, C. and Chen, W. (2024). Learning to Refuse: Towards Mitigating Privacy Risks in LLMs. [arXiv:2407.10058](https://arxiv.org/abs/2407.10058)  
 [3] Qiu, X., Shen, W.F., Chen, Y., Kurmanji, M., Cancedda, N., Stenetorp, P. and Lane, N.D. (2024). How Data Inter-connectivity Shapes LLMs Unlearning: A Structural Unlearning Perspective. [arXiv:2406.16810](https://arxiv.org/abs/2406.16810)  
 [4] Liu, C.Y., Wang, Y., Flanigan, J. and Liu, Y. (2024). Large Language Model Unlearning via Embedding-Corrupted Prompts. [arXiv:2406.07933](https://arxiv.org/abs/2406.07933)  
 [5] Scholten, Y., Günnemann, S. and Schwinn, L. (2024). A Probabilistic Perspective on Unlearning and Alignment for Large Language Models. [arXiv:2410.03523](https://arxiv.org/abs/2410.03523)
-"""
+
 
 ---
