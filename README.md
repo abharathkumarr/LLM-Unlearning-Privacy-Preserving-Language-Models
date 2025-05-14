@@ -60,8 +60,8 @@ We used the **RETURN Dataset**:
 - Uses `MoritzLaurer/deberta-v3-base-zeroshot-v1.1-all-33` as NLI classifier.
 - Prediction considered correct if NLI label is **entailment** or **neutral**.
 - Metrics:
-  - **Forget Accuracy**: Lower is better (more forgetting)
-  - **Retain Accuracy**: Higher is better (more remembering)
+  - **Forget Accuracy**: Measures model's ability to forget DF answers
+  - **Retain Accuracy**: Measures model's ability to retain DR knowledge
 
 ## 📎 References
 
