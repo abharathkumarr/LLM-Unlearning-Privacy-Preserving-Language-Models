@@ -1,7 +1,7 @@
 
 #  LLM Unlearning: Privacy-Preserving Language Models 
 
-This project implements and evaluates multiple methods for machine unlearning in Large Language Models (LLMs), focusing on the *Learning to Refuse* paper using the **RETURN dataset**.
+This project implements and evaluates multiple methods for machine unlearning in Large Language Models (LLMs), focusing on the *Learning to Refuse* paper using the **RETURN dataset**. 
 
 ##  Overview
 
